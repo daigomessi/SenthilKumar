@@ -1,0 +1,163 @@
+/* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== BACKGROUND VIDEO ===== */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00f0ff;
+}
+
+/* ===== HERO ===== */
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+}
+
+.main-name {
+    font-size: clamp(40px, 7vw, 90px);
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.role-text {
+    font-size: clamp(18px, 2.5vw, 35px);
+}
+
+/* Blinking cursor */
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* ===== ABOUT SECTION ===== */
+#about {
+    min-height: 100vh;
+    display: flex;
+    background: white;
+    color: black;
+    padding-top: 100px;
+}
+
+.about-left {
+    width: 55%;
+    padding: 80px;
+}
+
+.small-title {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: clamp(28px, 3vw, 48px);
+    margin-bottom: 25px;
+}
+
+.about-description {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-right {
+    width: 45%;
+}
+
+.about-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===== CONTACT ===== */
+.contact-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    #about {
+        flex-direction: column;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100%;
+    }
+
+    .about-right img {
+        height: 400px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
