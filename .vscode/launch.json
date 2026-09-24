@@ -8,8 +8,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open secondpage.html",
-            "file": "e:\\porfolio\\SenthilKumar\\Secondpage\\secondpage.html"
+            "name": "Open firstpage.html",
+            "file": "e:\\porfolio\\SenthilKumar\\Firstpage\\firstpage.html"
             
         }
     ]
