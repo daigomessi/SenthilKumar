@@ -217,22 +217,52 @@ body::before {
 }
 
 @media (max-width: 700px) {
+    .navbar {
+        padding: 12px 18px;
+    }
+
     .hero-left {
-        padding: 90px 28px 60px;
+        padding: 100px 24px 70px;
     }
 
     .main-name {
-        font-size: 12vw;
+        font-size: clamp(2.4rem, 13vw, 4.5rem);
+        letter-spacing: 1px;
     }
 
     .role-line {
-        font-size: 6vw;
+        font-size: clamp(1.35rem, 7vw, 2rem);
+        margin-bottom: 22px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 34rem;
+    }
+
+    .scroll-indicator {
+        bottom: 18px;
     }
 
     .nav-links {
         justify-content: flex-start;
-        gap: 16px;
+        gap: 20px;
         overflow-x: auto;
         padding-bottom: 4px;
+        scrollbar-width: none;
+        white-space: nowrap;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-links li a {
+        font-size: 13px;
+    }
+
+    .second-page-section {
+        height: 1700px;
     }
 }
