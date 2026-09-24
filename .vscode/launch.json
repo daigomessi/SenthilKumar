@@ -4,13 +4,11 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open firstpage.html",
-            "file": "e:\\porfolio\\SenthilKumar\\Firstpage\\firstpage.html"
-            
+            "name": "Open e.html",
+            "file": "e:\\git\\SenthilKumar\\e.html\\e.html"
         }
     ]
 }
