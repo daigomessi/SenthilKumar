@@ -1,4 +1,4 @@
-const words = ["AR/VR", "Python", "Game"];
+const words = ["AI/ML", "Software"];
 const changingWord = document.getElementById("changing-word");
 
 document.querySelectorAll('a[href*="Secondpage/secondpage.html"]').forEach((link) => {

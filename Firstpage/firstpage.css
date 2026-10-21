@@ -11,14 +11,14 @@
     --text: #f2fbfa;
     --muted: #9bb4b4;
     --accent: #72e5d3;
-    --accent-strong: #d9a86c;
+    --accent-strong: #9be8dc;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--ink);
     color: var(--text);
-    overflow-x: hidden;
+    overflow-x: clip;
     animation: pageEnter 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 

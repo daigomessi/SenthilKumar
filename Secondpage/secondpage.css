@@ -10,7 +10,7 @@ html, body {
     font-family: 'Poppins', sans-serif;
     background: #071014;
     color: #f2fbfa;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
@@ -110,8 +110,8 @@ html.embedded .navbar {
 }
 
 @keyframes pageEnter {
-    from { opacity: 0; transform: translateY(18px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -125,10 +125,12 @@ html.embedded .navbar {
 
 .about-left {
     width: 55%;
-    padding: 90px 7vw;
+    padding: 24px 7vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .small-title {
@@ -168,6 +170,25 @@ html.embedded .navbar {
     background: #071014;
     color: #f2fbfa;
     border-top: 1px solid rgba(143, 235, 224, 0.2);
+}
+
+.resume-btn {
+    display: block;
+    width: fit-content;
+    margin: 24px auto;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    text-decoration: none;
+    backdrop-filter: blur(15px);
+    transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
 }
 
 /* ===== RESPONSIVE ===== */
@@ -239,23 +260,23 @@ html.embedded .navbar {
     }
 
     .about-left {
-        padding: 72px 24px 48px;
+        padding: 24px 24px 48px;
     }
 
-    .small-title {
-        font-size: 12px;
-        line-height: 1.6;
-    }
+   .small-title {
+    font-size: 12px;
+    line-height: 1.6;
+}
 
-    .main-title {
-        font-size: clamp(1.8rem, 9vw, 2.7rem);
-        line-height: 1.15;
-    }
+.main-title {
+    font-size: clamp(1.8rem, 9vw, 2.7rem);
+    line-height: 1.15;
+}
 
-    .about-description {
-        font-size: 16px;
-        line-height: 1.65;
-    }
+.about-description {
+    font-size: 16px;
+    line-height: 1.65;
+}
 
     .about-right {
         min-height: 0;
