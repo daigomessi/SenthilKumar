@@ -5,6 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
+<<<<<<< HEAD
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open Portfolio (First Page)",
@@ -15,6 +16,18 @@
             "request": "launch",
             "name": "Open Portfolio (Second Page)",
             "url": "file:///${workspaceFolder}/SenthilKumar/Secondpage/secondpage.html"
+=======
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open First Page",
+            "file": "${workspaceFolder}/Firstpage/firstpage.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open Second Page",
+            "file": "${workspaceFolder}/Secondpage/secondpage.html"
+>>>>>>> ab1e4d443d52509881d461160fde1b176df86df1
         }
     ]
 }

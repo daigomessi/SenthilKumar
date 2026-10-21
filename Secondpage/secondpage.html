@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senthil Kumar Portfolio</title>
+    <link rel="stylesheet" href="secondpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        if (new URLSearchParams(window.location.search).has("embedded")) {
+            document.documentElement.classList.add("embedded");
+        }
+    </script>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+            <a href="https://github.com/daigomessi"
+               target="_blank"
+               rel="noopener noreferrer">
+               GitHub
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!-- ================= BACKGROUND VIDEO ================= -->
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="hero.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<!-- ================= HERO ================= -->
+<section id="hero">
+    <div class="hero-content">
+        <h1 class="main-name">SENTHIL KUMAR</h1>
+        <h2 class="role-text">
+            <span id="changing-word"></span>
+            <span class="cursor">|</span>
+            <span class="static-text"> Developer</span>
+        </h2>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+    <div class="about-left">
+        <h1 class="main-title">
+            SENTHIL KUMAR,
+        </h1>
+
+        <p class="about-description">
+I'm Senthil Kumar, a Computer Science and Engineering student passionate about Artificial Intelligence, Machine Learning, Python development, and immersive technologies. I enjoy building innovative projects that combine creativity with technology to solve real-world problems.
+
+My technical interests include data analysis, machine learning, game development, Augmented Reality (AR), and Virtual Reality (VR). I have hands-on experience working with Python, NumPy, Pandas, Unity, and Vuforia, along with projects that explore interactive experiences and smart technology solutions.
+
+I'm continuously learning, experimenting with new tools, and improving my problem-solving and development skills. My goal is to become a skilled developer who creates impactful, intelligent, and immersive digital experiences.
+        </p>
+    </div>
+
+    <div class="about-right">
+        <img src="profile.jpg" alt="Profile Image">
+    </div>
+</section>
+<a href="resume.html" target="_blank" rel="noopener noreferrer" class="resume-btn">
+    View Resume
+</a>
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Phone: <a href="tel:+918072905037">8072905037</a></p>
+    <p>Email: <a href="mailto:senthilkumar861039@gmail.com">senthilkumar861039@gmail.com</a></p>
+</section>
+
+<script src="secondpage.js"></script>
+</body>
+</html>
